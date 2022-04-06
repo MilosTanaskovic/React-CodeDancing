@@ -1,9 +1,18 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import FeedbackList from './components/FeedbackList';
+import Header from './components/Header';
+import FeedbackData from './data/FeedbackData';
+import Card from './components/shared/Card';
 
 export default function App(){
-    // js logic/sintax
+    const [feedbackData, setFeedbackData] = useState(FeedbackData);
+    
     return (
-        <h1>Hello Main Component</h1>
+        <>
+            <Header />
+            <div className='container'>
+                <FeedbackList feedback={feedbackData} />
+            </div>
+        </>
     );
 }
