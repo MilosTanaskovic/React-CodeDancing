@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FeedbackItem from './FeedbackItem';
 
-export default function FeedbackList({feedback}) {
+export default function FeedbackList({feedback, handleRemoveFB}) {
     if(!feedback || feedback.length === 0) return (<p>No Feedback Yest</p>);
 
     return (
@@ -11,6 +11,7 @@ export default function FeedbackList({feedback}) {
                 <FeedbackItem 
                     key={item.id}  
                     item={item}
+                    handleRemoveFB={handleRemoveFB}
                 />
             ))}
         </div>
