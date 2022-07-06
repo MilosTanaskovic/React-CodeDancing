@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function FeedbackStats({feedbackData}) {
     // Calculate ratings avg
@@ -13,6 +14,10 @@ export default function FeedbackStats({feedbackData}) {
             <h4>Avarge Rating: {isNaN(average) ? 0 : average}</h4>
         </div>
     )
+}
+
+FeedbackStats.propTypes = {
+    feedbackData: PropTypes.array.isRequired,
 }
 
 
