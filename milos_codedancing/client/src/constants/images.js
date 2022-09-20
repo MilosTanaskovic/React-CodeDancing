@@ -24,6 +24,8 @@ import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
+import milos1 from '../assets/milos_tanaskovic_codedancing.png';
+import milos from '../assets/milos.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
@@ -60,6 +62,7 @@ export default {
   about03,
   about04,
   profile,
+  milos,
   circle,
   logo,
   adidas,
