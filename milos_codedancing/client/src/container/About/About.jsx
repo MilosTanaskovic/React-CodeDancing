@@ -1,28 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {motion} from 'framer-motion';
-
-import {images} from '../../constants';
+import {AppWrap} from '../../wrapper';
 import { client, urlFor } from '../../Client'
 
 import './About.scss';
-
-// const aboutsData = [
-//   {
-//     'title' : 'web dev',
-//     'description': 'good',
-//     'imgUrl': images.about01,
-//   },
-//   {
-//     'title' : 'web design',
-//     'description': 'good',
-//     'imgUrl': images.about02,
-//   },
-//   {
-//     'title' : 'ux/ui',
-//     'description': 'good',
-//     'imgUrl': images.about03,
-//   }
-// ]
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -56,4 +37,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About,'about');
