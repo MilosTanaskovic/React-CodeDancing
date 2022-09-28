@@ -26,7 +26,6 @@ const Work = () => {
   }, [])
 
   const handleWorkFilter = (item) => {
-    console.log(item)
     setActiveFilter(item);
     setAnimateCard([{y: 100, opacity: 0}]);
 
@@ -34,10 +33,8 @@ const Work = () => {
       setAnimateCard([{y: 0, opacity: 1}]);
 
       if(item === 'All') {
-        console.log('all')
         setFilterWorks(works)
       } else {
-        console.log('not all')
         setFilterWorks(works.filter((work) => work.tags.includes(item)))
       }
     }, 500);

@@ -15,7 +15,7 @@ const Navbar = () => {
         'contact',
     ]);
     const [toggle, setToggle] = useState(false);
-    console.log(nav)
+    
   return (
     <nav className='app__navbar'>
          <div className='app__navbar-logo'>

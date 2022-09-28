@@ -20,9 +20,17 @@ const scaleVariants = {
 
 const Header = () => {
   const [techStack, setTechStack] = useState([
-    images.sass,
-    images.react,
-    images.redux,
+    // js
+    images.javascript,                 // 1
+    images.node,                       // 2
+    // react with addons
+    images.react,                      // 3
+    images.redux,                      // 4
+    // ts
+    images.typescript,                 // 5
+    // style
+    images.sass,                       // 6
+    images.mu5                         // 7
   ]);
 
   return (
@@ -44,7 +52,7 @@ const Header = () => {
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer &nbsp;</p>
+            <p className="p-text">React Js Developer &nbsp;</p>
             <p className="p-text">Consultant at Salt</p>
           </div>
         </div>

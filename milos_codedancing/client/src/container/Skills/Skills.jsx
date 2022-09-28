@@ -18,7 +18,6 @@ const Skills = () => {
 
     client.fetch(query)
       .then((data) => {
-        console.log(data);
         setExperiences(data);
       })
     client.fetch(skillsQuery)
@@ -51,7 +50,6 @@ const Skills = () => {
         </motion.div>
         {/* Experiences */}
         <div className="app__skills-exp">
-            {console.log('exp', experiences)}
             {experiences?.map((exp) => (
               <motion.div
                 className="app__skills-exp-item"
@@ -64,7 +62,6 @@ const Skills = () => {
                 <motion.div
                   className="app__skills-exp-works"
                 >
-                  {console.log('work', exp.works)}
                   {exp?.works?.map((work) => (
                     <>
                       <motion.div
