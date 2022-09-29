@@ -9,7 +9,7 @@ import {urlFor, client} from '../../Client';
 import './Work.scss';
 
 const Work = () => {
-  const [filters, setFilters] = useState(['UX/UI', 'Web App', 'React JS', 'All']);
+  const [filters, setFilters] = useState(['UX/UI', 'Web Design', 'Web App', 'React JS', 'All']);
   const [works, setWorks] = useState([]);
   const [filterWorks, setFilterWorks] = useState([])
   const [activeFilter, setActiveFilter] = useState('All');
@@ -97,7 +97,7 @@ const Work = () => {
 
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10}}>{work.title}</p>
+              <p className="p-text" style={{ marginTop: 10}}>{work.description}</p>
 
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
