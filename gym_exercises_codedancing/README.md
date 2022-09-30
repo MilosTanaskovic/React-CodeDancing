@@ -5,9 +5,13 @@
 ## Frontend - client
 - React
 - React Hook
+- [react-horizontal-scrolling-menu](https://www.npmjs.com/package/react-horizontal-scrolling-menu)
+- [React Spinners](https://mhnpd.github.io/react-loader-spinner/docs/intro/)
+- 
 - npm
 - CSS3
-- React MUI5
+- [Emotion/React](https://emotion.sh/docs/introduction) 
+- [React MUI5](https://mui.com/)
 
 ### Folder Strucure
 - assets
