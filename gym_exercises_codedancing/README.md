@@ -1,3 +1,25 @@
+# Milos @codedancing gym_exercises app
+
+# Tech stack
+
+## Frontend - client
+- React
+- React Hook
+- npm
+- CSS3
+- React MUI5
+
+### Folder Strucure
+- assets
+- components
+- container
+- constants
+
+## Backend - server
+- REST APIs
+- 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
