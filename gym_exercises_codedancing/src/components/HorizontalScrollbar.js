@@ -5,12 +5,13 @@ import {ScrollMenu} from 'react-horizontal-scrolling-menu';
 import BodyPart from './BodyPart'
 import LeftArrow from './Arrows/LeftArrow';
 import RightArrow from './Arrows/RightArrow';
+import ExerciseCard from './ExerciseCard';
   
-const HorizontalScrollbar = ({data,extraBodyParts, bodyPart, setBodyPart}) => {
-    const {names, icons} = extraBodyParts;
+const HorizontalScrollbar = ({data, extraBodyParts, bodyPart, setBodyPart, isBodyParts}) => {
+
     return (
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-            {names.map((item) => {
+            {data.map((item) => {
             return (
                 <Box
                     key={item.id || item}
@@ -18,12 +19,15 @@ const HorizontalScrollbar = ({data,extraBodyParts, bodyPart, setBodyPart}) => {
                     title={item.id || item}
                     m="0 40px"
                 >
-                    <BodyPart 
-                        item={item}
-                        extraBodyParts={extraBodyParts}
-                        bodyPart={bodyPart}
-                        setBodyPart={setBodyPart}
-                    />
+                    {isBodyParts ? (
+                        <BodyPart 
+                            item={item}
+                            bodyPart={bodyPart}
+                            setBodyPart={setBodyPart}
+                        />
+                    ):(
+                        <ExerciseCard exercise={item} />
+                    )}
                 </Box>
             )})}
                 
