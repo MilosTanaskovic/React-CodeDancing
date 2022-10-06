@@ -8,11 +8,16 @@ import Icon from '../assets/icons/gym.png';
 import Back from '../assets/bodyPart/back.png';
 import Cardio from '../assets/bodyPart/cardio.jpeg';
 
-const bodyPartImgs = [Icon, Back, Cardio];
+const bodyPartImgs = [Icon, Back, Cardio, Icon, Back, Cardio, Icon, Back, Cardio, Icon, Back];
 
 const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
     const [search, setSearch] = useState('');
     const [bodyParts, setBodyParts] = useState([]);
+
+    const extraBodyParts = {
+        names: bodyParts,
+        icons: bodyPartImgs
+    }
 
     useEffect(() => {
         const fetchExercisesData = async () => {
@@ -107,6 +112,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
             >
                 <HorizontalScrollbar 
                     data={bodyParts}
+                    extraBodyParts={extraBodyParts}
                     bodyPart={bodyPart}
                     setBodyPart={setBodyPart}
                 />

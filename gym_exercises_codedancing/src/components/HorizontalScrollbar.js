@@ -6,10 +6,11 @@ import BodyPart from './BodyPart'
 import LeftArrow from './Arrows/LeftArrow';
 import RightArrow from './Arrows/RightArrow';
   
-const HorizontalScrollbar = ({data, bodyPart, setBodyPart}) => {
+const HorizontalScrollbar = ({data,extraBodyParts, bodyPart, setBodyPart}) => {
+    const {names, icons} = extraBodyParts;
     return (
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
-            {data.map((item) => {
+            {names.map((item) => {
             return (
                 <Box
                     key={item.id || item}
@@ -19,11 +20,13 @@ const HorizontalScrollbar = ({data, bodyPart, setBodyPart}) => {
                 >
                     <BodyPart 
                         item={item}
+                        extraBodyParts={extraBodyParts}
                         bodyPart={bodyPart}
                         setBodyPart={setBodyPart}
                     />
                 </Box>
             )})}
+                
         </ScrollMenu>
     )
 }
