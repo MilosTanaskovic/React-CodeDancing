@@ -13,7 +13,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
                 Watch <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{name}</span> exercise videos
             </Typography>
             <Stack sx={{ flexDirection: { lg: 'row' }, gap: { lg: '110px', xs: '0px' } }} justifyContent="flex-start" flexWrap="wrap" alignItems="center">
-                {exerciseVideos?.slice(0, 3)?.map((item, index) => (
+                {exerciseVideos?.slice(0, 6)?.map((item, index) => (
                 <a
                     key={index}
                     className="exercise-video"
@@ -21,7 +21,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
+                    <img style={{ borderTopLeftRadius: '20px', height: '217px', objectFit: 'cover' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
                     <Box>
                     <Typography sx={{ fontSize: { lg: '28px', xs: '18px' } }} fontWeight={600} color="#000">
                         {item.video.title}

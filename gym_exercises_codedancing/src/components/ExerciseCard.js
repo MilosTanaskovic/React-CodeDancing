@@ -4,10 +4,14 @@ import { Button, Stack, Typography } from '@mui/material';
 import {Link} from 'react-router-dom';
 
 const ExerciseCard = ({exercise}) => {
+    const handleScroll = () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
     return (
         <Link
             to={`/exercise/${exercise.id}`}
             className="exercise-card"
+            onClick={handleScroll}
         >
             <img src={exercise.gifUrl} alt={exercise.bodyPart} loading="lazy" />
             <Stack direction="row">
