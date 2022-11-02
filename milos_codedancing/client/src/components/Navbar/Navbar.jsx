@@ -19,9 +19,9 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
          <div className='app__navbar-logo'>
-            {/*<img src={images.logo} alt="logo" />*/}
+            <img src={images.miloscdlogo} alt="milos codedancing logo" />
             {/* <p>CodeDancing with</p>*/}
-            <h1 className="head-text"> Milos</h1>
+            {/* <h1 className="head-text"> Milos</h1> */}
         </div>
         {/* desk nav bar */}
         <ul className='app__navbar-links'>

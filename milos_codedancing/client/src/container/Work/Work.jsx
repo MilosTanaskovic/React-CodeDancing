@@ -9,7 +9,7 @@ import {urlFor, client} from '../../Client';
 import './Work.scss';
 
 const Work = () => {
-  const [filters, setFilters] = useState(['UX/UI', 'Web Design', 'Web App', 'React JS', 'All']);
+  const [filters, setFilters] = useState(['UX/UI', 'Web Design', 'Web App', 'React JS', 'Next JS', 'All']);
   const [works, setWorks] = useState([]);
   const [filterWorks, setFilterWorks] = useState([])
   const [activeFilter, setActiveFilter] = useState('All');

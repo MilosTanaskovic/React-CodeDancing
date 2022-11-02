@@ -1,4 +1,5 @@
 import email from '../assets/email.png';
+import cv from '../assets/cv.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
@@ -25,6 +26,8 @@ import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
 import milos1 from '../assets/milos_tanaskovic_codedancing.png';
+// import miloscdlogo from '../assets/milos_codedancing_logo.png';
+import miloscdlogo from '../assets/milos_cd_logo_stars.png';
 import milos from '../assets/milos.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
@@ -39,6 +42,7 @@ import spotify from '../assets/spotify.png';
 
 export default {
   email,
+  cv,
   mobile,
   api,
   cpp,
@@ -62,6 +66,7 @@ export default {
   about03,
   about04,
   profile,
+  miloscdlogo,
   milos,
   circle,
   logo,

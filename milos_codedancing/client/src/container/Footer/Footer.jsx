@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { images } from '../../constants';
+import { files, images } from '../../constants';
 import {AppWrap, MotionWrap} from '../../wrapper';
 import {client} from '../../Client';
 
@@ -51,9 +51,13 @@ const Footer = () => {
           <a href="mailto:milostanaskovic.dev.data@gmail.com" className="p-text">milostanaskovic.dev.data@gmail.com</a>
         </div>
         <div className="app__footer-card">
+          <img src={images.cv} alt="Milos Tanaskovic PDF CV" />
+          <a href={files.MTCV} download className="p-text">Download My Updated CV</a>
+        </div>
+        {/*<div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
           <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
-        </div>
+        </div>*/}
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
