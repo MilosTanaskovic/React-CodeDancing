@@ -16,6 +16,7 @@ import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
+import tailwindcss from '../assets/tailwindcss.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
@@ -25,7 +26,6 @@ import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
-import milos1 from '../assets/milos_tanaskovic_codedancing.png';
 // import miloscdlogo from '../assets/milos_codedancing_logo.png';
 import miloscdlogo from '../assets/milos_cd_logo_stars.png';
 import milos from '../assets/milos.png';
@@ -40,7 +40,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
-export default {
+const images = {
   email,
   cv,
   mobile,
@@ -59,6 +59,7 @@ export default {
   react,
   redux,
   sass,
+  tailwindcss,
   typescript,
   vue,
   about01,
@@ -78,3 +79,5 @@ export default {
   skype,
   spotify,
 };
+
+export default images;

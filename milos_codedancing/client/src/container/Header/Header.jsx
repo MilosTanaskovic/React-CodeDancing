@@ -29,8 +29,9 @@ const Header = () => {
     // ts
     images.typescript,                 // 5
     // style
-    images.sass,                       // 6
-    images.mu5                         // 7
+    images.tailwindcss,                // 6 
+    images.sass,                       // 7
+    //images.mu5                         // 8
   ]);
 
   return (
@@ -52,8 +53,8 @@ const Header = () => {
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">React Js Developer 👨‍💻 &nbsp;</p>
-            <p className="p-text">Basketeer at Sloga Uppsala 🏀</p>
+            <p className="p-text">Senior Frontend | React Web Engineer 👨‍💻 &nbsp;</p>
+            <p className="p-text">Basketeer at AIK Basket 🏀</p>
           </div>
         </div>
       </motion.div>
@@ -63,12 +64,17 @@ const Header = () => {
         transition={{duration: 0.5, delayChildren: 0.5}}
         className='app__header-img'
       >
-        <img src={images.milos} alt="milos tanaskovic codedancingstudio profile" />
+        <img 
+          src={images.milos}
+          //srcSet={`${images.milos}, ${images.about01}`} 
+          loading="lazy" 
+          alt="Milos Tanaskovic - CodeDancingwithMilos profile" 
+        />
         <motion.img
           whileInView={{scale: [0, 1]}}
           transition={{duration: 1, ease: 'easeInOut'}}
           src={images.circle}
-          alt='profile codedancingstudio'
+          alt='CodeDancing with Milos'
           className='overlay_circle'
         />
       </motion.div>
@@ -80,7 +86,7 @@ const Header = () => {
       >
         {techStack.map((stack) => (
           <div className="circle-cmp app__flex">
-            <img src={stack} alt="tech stack of Milos codedancing" />
+            <img src={stack} alt="tech stack of Milos Tanaskovic - CodeDancingwithMilos" />
           </div>
         ))}
       </motion.div>

@@ -1,5 +1,7 @@
-import MTCV from '../assets/CVMilosTanaskovic.pdf';
+import MTCV from '../assets/CVMilosTanaskovic2024.pdf';
 
-export default {
+const files = {
     MTCV,
-}
+};
+
+export default files;
